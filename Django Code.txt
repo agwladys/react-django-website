@@ -1,0 +1,32 @@
+from django.shortcuts import render
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+
+# Sample data (replace with database or API calls)
+aws_services = [
+    {'name': 'Amazon EC2', 'description': '...' },
+    {'name': 'Amazon S3', 'description': '...' },
+    # ... more services
+]
+
+architecture_diagrams = [
+    {'name': 'Basic Web Application', 'services': ['EC2', 'S3', 'RDS'] },
+    # ... more diagrams
+]
+
+@csrf_exempt
+def get_services(request):
+  if request.method == 'GET':
+    return JsonResponse(aws_services)
+  elif request.method == 'POST':
+    search_term = request.POST.get('search')
+    # Implement search logic here
+    return JsonResponse(aws_services)
+
+@csrf_exempt
+def get_diagrams(request):
+  if request.method == 'GET':
+    return JsonResponse(architecture_diagrams)
+  elif request.method == 'POST':
+    # Implement diagram creation logic here
+    return JsonResponse({'message': 'Diagram created successfully'})

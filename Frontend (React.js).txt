@@ -1,0 +1,9 @@
+Homepage: Displays a welcome message, highlights key features, and provides links to different sections.
+
+Documentation Section: Displays a list of AWS services, allowing users to search and view documentation.
+
+Architecture Diagram Section: Shows a gallery of pre-built diagrams, with options to customize and download.
+
+Cost Optimization Section: Provides cost calculators and visualization tools.
+
+Forum Section: Displays forum topics, allows users to create new topics, and reply to existing ones.

@@ -1,0 +1,8 @@
+API Endpoints:
+
+/api/services/:
+GET: Retrieves a list of all AWS services, including their names, descriptions, and links to documentation.
+POST: Allows users to search for specific services based on keywords.
+/api/diagrams/:
+GET: Retrieves a list of pre-built architecture diagrams, categorized by use case and service.
+POST: Allows users to create new diagrams, specifying the desired services and configurations.
